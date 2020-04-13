@@ -39,5 +39,5 @@ mod3 <- manyglm(Herb_spp ~s_tASVs2$transect+s_tASVs2$day+s_tASVs2$treatment+s_tA
 
 
 #This is what gives significance, specify your model "mod3", how you want it do to pairwise computations, and if you want adjusted pvalues for univariate testing. Show time can be nice, but often breaks.
-x<-anova(mod3,p.uni="adj",pairwise.comp=s_tASVs2$interaction,show.time = "all")
+x<-anova(mod3,p.uni="adjusted",pairwise.comp=s_tASVs2$interaction,show.time = "all")
 
