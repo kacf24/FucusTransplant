@@ -1,4 +1,4 @@
-#Load the used libraries.
+#Load the used libraries
 library(vegan)
 library(svglite)
 library(readr)
