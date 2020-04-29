@@ -74,7 +74,7 @@ plot_nat = ggplot(data.scores_nat, aes(x = NMDS1, y = NMDS2)) +
         panel.background = element_blank(), panel.border = element_rect(colour = "black", fill = NA, size = 1.2),
         legend.key = element_blank()) +
   labs(x = "NMDS1", colour = "Time", y = "NMDS2", shape = "Type") +
-  scale_colour_manual(name = "Species", breaks = c("Fs", "Fv", "Fd"), values = c("#E69F00", "#0072B2", "#D55E00")) +
+  scale_colour_manual(name = "Species", breaks = c("Fs", "Fv", "Fd"), values = c("#F0E442", "#0072B2", "#D55E00")) +
   scale_shape_manual(name = "Tissue", labels = c("H", "R", "V"), values = c(15, 17, 19)) +
   guides(col = guide_legend(title.position = "top", ncol = 1), shape = guide_legend(title.position = "top", ncol = 1))
 
